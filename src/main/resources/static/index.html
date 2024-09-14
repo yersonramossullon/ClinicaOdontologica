@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-200">
+    <nav class="bg-gray-950 p-4 fixed top-0 left-0 w-full shadow-lg z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="./index.html" class="text-white text-lg font-semibold">
+          Clinica Odontologica
+        </a>
+        <ul class="flex space-x-8">
+          <!-- Opción 1 -->
+          <li class="group relative">
+            <a href="#" class="text-white hover:text-gray-300 font-semibold">
+              Odontologos
+            </a>
+            <ul
+              class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <li>
+                <a
+                  href="./odontologos/post_odontologos.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Guardar
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./odontologos/get_odontologos.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Listar Odontologos
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Opción 2 -->
+          <li class="group relative">
+            <a href="#" class="text-white hover:text-gray-300 font-semibold">
+              Pacientes
+            </a>
+            <ul
+              class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <li>
+                <a
+                  href="./pacientes/post_paciente.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Guardar
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./pacientes/get_pacientes.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Listar Pacientes
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Opción 3 -->
+          <li class="group relative">
+            <a href="#" class="text-white hover:text-gray-300 font-semibold">
+              Turnos
+            </a>
+            <ul
+              class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <li>
+                <a
+                  href="./turnos/post_turno.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Guardar
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./turnos/get_turno.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Listar Turnos
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>

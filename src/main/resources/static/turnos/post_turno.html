@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guardar Turnos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="../js/turnos/post_turnos.js"></script>
+  </head>
+  <body class="bg-gray-200">
+    <nav class="bg-gray-950 p-4 fixed top-0 left-0 w-full shadow-lg z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="../index.html" class="text-white text-lg font-semibold">
+          Clinica Odontologica
+        </a>
+        <ul class="flex space-x-8">
+          <!-- Opción 1 -->
+          <li class="group relative">
+            <a href="#" class="text-white hover:text-gray-300 font-semibold">
+              Odontologos
+            </a>
+            <ul
+              class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <li>
+                <a
+                  href="../odontologos/post_odontologos.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Guardar
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../odontologos/get_odontologos.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Listar Odontologos
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Opción 2 -->
+          <li class="group relative">
+            <a href="#" class="text-white hover:text-gray-300 font-semibold">
+              Pacientes
+            </a>
+            <ul
+              class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <li>
+                <a
+                  href="../pacientes/post_paciente.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Guardar
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../pacientes/get_pacientes.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Listar Pacientes
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Opción 3 -->
+          <li class="group relative">
+            <a href="#" class="text-white hover:text-gray-300 font-semibold">
+              Turnos
+            </a>
+            <ul
+              class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <li>
+                <a
+                  href="../turnos/get_turno.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Listar Turnos
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <header class="flex justify-center mt-20">
+        <h1 class="text-3xl font-bold p-4">Guardar Turnos</h1>
+      </header>
+      <div class="container mx-auto mt-1">
+        <form
+          id="agregarNuevoTurno"
+          class="bg-white p-8 rounded-lg shadow-lg max-w-lg mx-auto"
+        >
+          <!-- Información del formulario del turno -->
+          <fieldset class="mb-6">
+            <legend class="text-xl font-semibold mb-4 text-gray-700">
+              Información Del Turno
+            </legend>
+
+            <label for="IdOdontologo" class="block mb-2 text-gray-700"
+              >Id del Odontologo</label
+            >
+            <input
+              type="text"
+              id="IdOdontologo"
+              name="IdOdontologo"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Id del Odontologo"
+            />
+
+            <label for="IdPaciente" class="block mt-4 mb-2 text-gray-700"
+              >Id del Paciente</label
+            >
+            <input
+              type="text"
+              id="IdPaciente"
+              name="IdPaciente"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Id del Paciente"
+            />
+
+            <label for="fecha-ingreso" class="block mt-4 mb-2 text-gray-700"
+              >Fecha del Turno</label
+            >
+            <input
+              type="date"
+              id="fecha-ingreso"
+              name="fecha-ingreso"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </fieldset>
+
+          <!-- Botón de Enviar -->
+          <button
+            type="submit"
+            class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+          >
+            Guardar Turno
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

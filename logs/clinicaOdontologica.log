@@ -1,0 +1,1399 @@
+[2024-09-12 00:10:13] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 750105 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-12 00:10:13] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-12 00:10:13] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-12 00:10:13] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-12 00:10:13] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-12 00:10:13] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+[2024-09-12 00:10:14] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-12 00:10:14] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-12 00:10:14] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-12 00:10:14] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-12 00:10:14] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-12 00:10:14] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1099 ms
+[2024-09-12 00:10:14] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-12 00:10:14] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-12 00:10:14] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-12 00:10:14] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-12 00:10:14] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-12 00:10:14] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-12 00:10:14] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-12 00:10:14] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-12 00:10:15] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-12 00:10:15] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-12 00:10:15] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-12 00:10:16] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-12 00:10:16] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-12 00:10:16] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-12 00:10:16] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-12 00:10:16] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-12 00:10:16] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-12 00:10:16] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 3.503 seconds (process running for 4.218)
+[2024-09-12 00:10:25] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-12 00:10:25] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-12 00:10:25] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-12 00:50:44] [ INFO ] [LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211] Restarting due to 41 class path changes (0 additions, 0 deletions, 41 modifications)
+[2024-09-12 00:50:44] [ INFO ] [Http11NioProtocol:173] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-09-12 00:50:44] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-12 00:50:44] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-12 00:50:44] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-12 00:50:44] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-12 00:50:45] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 750105 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-12 00:50:45] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-12 00:50:45] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-12 00:50:45] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+[2024-09-12 00:50:45] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-12 00:50:45] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-12 00:50:45] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-12 00:50:45] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-12 00:50:45] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-12 00:50:45] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 183 ms
+[2024-09-12 00:50:45] [ INFO ] [HikariDataSource:109] HikariPool-2 - Starting...
+[2024-09-12 00:50:45] [ INFO ] [HikariPool:554] HikariPool-2 - Added connection conn20: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-12 00:50:45] [ INFO ] [HikariDataSource:122] HikariPool-2 - Start completed.
+[2024-09-12 00:50:45] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-12 00:50:45] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-12 00:50:45] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-12 00:50:45] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-12 00:50:45] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-12 00:50:45] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-12 00:50:45] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-12 00:50:45] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-12 00:50:45] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-12 00:50:45] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-12 00:50:45] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-12 00:50:45] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-12 00:50:45] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-12 00:50:45] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 0.447 seconds (process running for 2433.273)
+[2024-09-12 00:50:45] [ INFO ] [ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
+[2024-09-12 00:51:25] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-12 00:51:25] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-12 00:51:25] [ INFO ] [DispatcherServlet:554] Completed initialization in 0 ms
+[2024-09-12 00:53:13] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-12 00:53:13] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-12 00:53:13] [ INFO ] [HikariDataSource:349] HikariPool-2 - Shutdown initiated...
+[2024-09-12 00:53:13] [ INFO ] [HikariDataSource:351] HikariPool-2 - Shutdown completed.
+[2024-09-12 13:57:42] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 158128 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-12 13:57:42] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-12 13:57:42] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-12 13:57:42] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-12 13:57:42] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-12 13:57:42] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 33 ms. Found 4 JPA repository interfaces.
+[2024-09-12 13:57:43] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-12 13:57:43] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-12 13:57:43] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-12 13:57:43] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-12 13:57:43] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-12 13:57:43] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 924 ms
+[2024-09-12 13:57:43] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-12 13:57:43] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-12 13:57:43] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-12 13:57:43] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-12 13:57:43] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-12 13:57:43] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-12 13:57:43] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-12 13:57:43] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-12 13:57:44] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-12 13:57:44] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-12 13:57:44] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-12 13:57:44] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-12 13:57:44] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-12 13:57:44] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-12 13:57:45] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-12 13:57:45] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-12 13:57:45] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-12 13:57:45] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 3.187 seconds (process running for 3.813)
+[2024-09-12 13:57:57] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-12 13:57:57] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-12 13:57:57] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-12 14:06:17] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-12 14:06:17] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-12 14:06:17] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-12 14:06:17] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 07:19:42] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 123769 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-13 07:19:42] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 07:19:42] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 07:19:42] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 07:19:42] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 07:19:42] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+[2024-09-13 07:19:43] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 07:19:43] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 07:19:43] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 07:19:43] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 07:19:43] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 07:19:43] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1060 ms
+[2024-09-13 07:19:43] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 07:19:43] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 07:19:43] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 07:19:43] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 07:19:43] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 07:19:43] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 07:19:43] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 07:19:44] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 07:19:44] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 07:19:44] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 07:19:44] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 07:19:45] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 07:19:45] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 07:19:45] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 07:19:45] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 07:19:45] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 07:19:45] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 07:19:45] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 3.516 seconds (process running for 4.168)
+[2024-09-13 07:20:02] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 07:20:02] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 07:20:02] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-13 09:24:25] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 09:24:25] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 09:24:25] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 09:24:25] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 09:25:51] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 257627 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-13 09:25:51] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 09:25:51] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 09:25:51] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 09:25:51] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 09:25:52] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 41 ms. Found 4 JPA repository interfaces.
+[2024-09-13 09:25:52] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 09:25:52] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 09:25:52] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 09:25:52] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 09:25:52] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 09:25:52] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 990 ms
+[2024-09-13 09:25:52] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 09:25:52] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 09:25:52] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 09:25:52] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 09:25:52] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 09:25:52] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 09:25:52] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 09:25:53] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 09:25:53] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 09:25:53] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 09:25:54] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 09:25:54] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 09:25:54] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 09:25:54] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 09:25:54] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 09:25:54] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 09:25:54] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 09:25:54] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 3.271 seconds (process running for 3.857)
+[2024-09-13 09:26:06] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 09:26:06] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 09:26:06] [ INFO ] [DispatcherServlet:554] Completed initialization in 2 ms
+[2024-09-13 09:57:02] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 09:57:02] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 09:57:02] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 09:57:02] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 10:45:10] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 353566 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-13 10:45:10] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 10:45:10] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 10:45:10] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 10:45:11] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 10:45:11] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 33 ms. Found 4 JPA repository interfaces.
+[2024-09-13 10:45:11] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 10:45:11] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 10:45:11] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 10:45:11] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 10:45:11] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 10:45:11] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 897 ms
+[2024-09-13 10:45:11] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 10:45:11] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 10:45:11] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 10:45:11] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 10:45:11] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 10:45:11] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 10:45:11] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 10:45:12] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 10:45:12] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 10:45:12] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 10:45:12] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 10:45:12] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 10:45:12] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 10:45:12] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 10:45:13] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 10:45:13] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 10:45:13] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 10:45:13] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 2.921 seconds (process running for 3.473)
+[2024-09-13 10:45:20] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 10:45:20] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 10:45:20] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-13 10:58:57] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 10:58:57] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 10:58:57] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 10:58:57] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 11:02:42] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 377731 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-13 11:02:42] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 11:02:42] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 11:02:42] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 11:02:42] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 11:02:42] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 39 ms. Found 4 JPA repository interfaces.
+[2024-09-13 11:02:43] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 11:02:43] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 11:02:43] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 11:02:43] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 11:02:43] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 11:02:43] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 994 ms
+[2024-09-13 11:02:43] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 11:02:43] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 11:02:43] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 11:02:43] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 11:02:43] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 11:02:43] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 11:02:43] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 11:02:43] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 11:02:44] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 11:02:44] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 11:02:44] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 11:02:44] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 11:02:44] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 11:02:44] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 11:02:44] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 11:02:44] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 11:02:44] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 11:02:44] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 3.021 seconds (process running for 3.627)
+[2024-09-13 11:03:02] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 11:03:02] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 11:03:02] [ INFO ] [DispatcherServlet:554] Completed initialization in 0 ms
+[2024-09-13 11:09:44] [ INFO ] [LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2024-09-13 11:09:44] [ INFO ] [Http11NioProtocol:173] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-09-13 11:09:44] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 11:09:44] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 11:09:44] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 11:09:44] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 11:09:44] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 377731 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-13 11:09:44] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 11:09:44] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 11:09:44] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
+[2024-09-13 11:09:44] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 11:09:44] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 11:09:44] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 11:09:44] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 11:09:44] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 11:09:44] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 187 ms
+[2024-09-13 11:09:44] [ INFO ] [HikariDataSource:109] HikariPool-2 - Starting...
+[2024-09-13 11:09:44] [ INFO ] [HikariPool:554] HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 11:09:44] [ INFO ] [HikariDataSource:122] HikariPool-2 - Start completed.
+[2024-09-13 11:09:44] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 11:09:44] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 11:09:44] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 11:09:44] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 11:09:44] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 11:09:44] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 11:09:44] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 11:09:44] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 11:09:44] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 11:09:44] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 11:09:44] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 11:09:44] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 11:09:44] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 11:09:44] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 0.451 seconds (process running for 423.237)
+[2024-09-13 11:09:44] [ INFO ] [ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
+[2024-09-13 11:09:55] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 11:09:55] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 11:09:55] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-13 11:11:28] [ INFO ] [LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2024-09-13 11:11:28] [ INFO ] [Http11NioProtocol:173] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-09-13 11:11:28] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 11:11:28] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 11:11:28] [ INFO ] [HikariDataSource:349] HikariPool-2 - Shutdown initiated...
+[2024-09-13 11:11:28] [ INFO ] [HikariDataSource:351] HikariPool-2 - Shutdown completed.
+[2024-09-13 11:11:28] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 377731 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-13 11:11:28] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 11:11:28] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 11:11:28] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
+[2024-09-13 11:11:28] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 11:11:28] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 11:11:28] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 11:11:28] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 11:11:28] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 11:11:28] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 154 ms
+[2024-09-13 11:11:28] [ INFO ] [HikariDataSource:109] HikariPool-3 - Starting...
+[2024-09-13 11:11:28] [ INFO ] [HikariPool:554] HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 11:11:28] [ INFO ] [HikariDataSource:122] HikariPool-3 - Start completed.
+[2024-09-13 11:11:28] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 11:11:28] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 11:11:28] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 11:11:28] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 11:11:28] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 11:11:28] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 11:11:28] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 11:11:28] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 11:11:28] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 11:11:28] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 11:11:28] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 11:11:28] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 11:11:28] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 11:11:28] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 0.354 seconds (process running for 527.628)
+[2024-09-13 11:11:29] [ INFO ] [ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
+[2024-09-13 11:11:42] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 11:11:42] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 11:11:42] [ INFO ] [HikariDataSource:349] HikariPool-3 - Shutdown initiated...
+[2024-09-13 11:11:42] [ INFO ] [HikariDataSource:351] HikariPool-3 - Shutdown completed.
+[2024-09-13 18:21:34] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 5692 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 18:21:34] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 18:21:34] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 18:21:34] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 18:21:35] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 18:21:35] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+[2024-09-13 18:21:36] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 18:21:36] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 18:21:36] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 18:21:36] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 18:21:36] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 18:21:36] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1947 ms
+[2024-09-13 18:21:36] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 18:21:36] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 18:21:36] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 18:21:36] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 18:21:37] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 18:21:37] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 18:21:37] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 18:21:37] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 18:21:38] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 18:21:38] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 18:21:39] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 18:21:39] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 18:21:39] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 18:21:39] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 18:21:39] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 18:21:39] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 18:21:39] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 18:21:39] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 5.673 seconds (process running for 7.87)
+[2024-09-13 18:22:33] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 18:22:33] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 18:22:33] [ INFO ] [DispatcherServlet:554] Completed initialization in 2 ms
+[2024-09-13 18:49:10] [ WARN ] [HikariPool:797] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s722ms705µs100ns).
+[2024-09-13 18:58:45] [ WARN ] [HikariPool:797] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m35s14ms121µs300ns).
+[2024-09-13 19:03:56] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 19:03:56] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 19:03:56] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 19:03:56] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 19:04:21] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 9204 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 19:04:21] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 19:04:21] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 19:04:21] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 19:04:22] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 19:04:22] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+[2024-09-13 19:04:22] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 19:04:22] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 19:04:22] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 19:04:22] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 19:04:23] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 19:04:23] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1513 ms
+[2024-09-13 19:04:23] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 19:04:23] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 19:04:23] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 19:04:23] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 19:04:23] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 19:04:23] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 19:04:23] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 19:04:23] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 19:04:24] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 19:04:24] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 19:04:25] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 19:04:25] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 19:04:25] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 19:04:25] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 19:04:26] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 19:04:26] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 19:04:26] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 19:04:26] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 5.108 seconds (process running for 6.116)
+[2024-09-13 19:04:59] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 19:04:59] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 19:04:59] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-13 19:05:24] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 19:05:24] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 19:05:24] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 19:05:24] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 19:05:34] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 14892 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 19:05:34] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 19:05:34] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 19:05:34] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 19:05:35] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 19:05:35] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+[2024-09-13 19:05:36] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 19:05:36] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 19:05:36] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 19:05:36] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 19:05:36] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 19:05:36] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1403 ms
+[2024-09-13 19:05:36] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 19:05:36] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 19:05:36] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 19:05:36] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 19:05:36] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 19:05:36] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 19:05:36] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 19:05:36] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 19:05:37] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 19:05:37] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 19:05:38] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 19:05:38] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 19:05:38] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 19:05:38] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 19:05:38] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 19:05:38] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 19:05:38] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 19:05:38] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 4.481 seconds (process running for 5.356)
+[2024-09-13 19:06:10] [ INFO ] [Http11Processor:175] Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xb20x010x000x060xae0x030x03V0xf10xd83^0x05K0x14J0xd90xad0xc7_0xa40x7fB0x800x15Y0xba*0x9e0xcax=0xcf0xaf0x8a0xe60xf3y0x0d ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+[2024-09-13 19:06:10] [ INFO ] [Http11Processor:175] Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xd20x010x000x060xce0x030x030x0f00x060xee0x890xfaok0x810xf5.0xba0xc60x81]0x900x8d0x17)0x900xf20xb02m20xc4Li0xaa0x870xae0xca ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+[2024-09-13 19:06:35] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 19:06:35] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 19:06:35] [ INFO ] [DispatcherServlet:554] Completed initialization in 2 ms
+[2024-09-13 19:10:55] [ WARN ] [ExceptionHandlerExceptionResolver:247] Resolved [com.digitalhouse.ClinicaOdontologica.Exception.BadRequestException: Paciente u Odontologo no encontrados por ID]
+[2024-09-13 19:11:00] [ ERROR] [[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null] with root cause
+java.lang.IllegalArgumentException: The given id must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:172) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:310) ~[spring-data-jpa-3.3.2.jar:3.3.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.11.jar:6.1.11]
+	at jdk.proxy4/jdk.proxy4.$Proxy147.findById(Unknown Source) ~[?:?]
+	at com.digitalhouse.ClinicaOdontologica.Service.PacienteService.buscarPorId(PacienteService.java:31) ~[classes/:?]
+	at com.digitalhouse.ClinicaOdontologica.Controller.TurnoController.guardarTurno(TurnoController.java:30) ~[classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+[2024-09-13 20:19:08] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 20:19:08] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 20:19:08] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 20:19:08] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 20:19:39] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 8856 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 20:19:39] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 20:19:39] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 20:19:39] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 20:19:40] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 20:19:40] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 74 ms. Found 4 JPA repository interfaces.
+[2024-09-13 20:19:41] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 20:19:41] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 20:19:41] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 20:19:41] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 20:19:41] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 20:19:41] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1826 ms
+[2024-09-13 20:19:41] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 20:19:41] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 20:19:41] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 20:19:41] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 20:19:42] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 20:19:42] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 20:19:42] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 20:19:42] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 20:19:43] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 20:19:43] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 20:19:44] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 20:19:44] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 20:19:44] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 20:19:44] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 20:19:45] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 20:19:45] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 20:19:45] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 20:19:45] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 6.032 seconds (process running for 7.286)
+[2024-09-13 20:22:34] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 20:22:34] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 20:22:34] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 20:22:34] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:14:20] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 10644 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:14:20] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:14:20] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 23:14:20] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 23:14:20] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:14:20] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:14:21] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 23:14:21] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:14:21] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 23:14:21] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 23:14:21] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 23:14:21] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1427 ms
+[2024-09-13 23:14:21] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:14:21] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:14:21] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:14:21] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 23:14:22] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:14:22] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:14:22] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:14:22] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:14:23] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:14:23] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:14:23] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:14:23] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:14:23] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:14:23] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:14:24] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 23:14:24] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:14:24] [ WARN ] [AnnotationConfigServletWebServerApplicationContext:633] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[2024-09-13 23:14:24] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:14:24] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 23:14:24] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:14:24] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:14:24] [ INFO ] [ConditionEvaluationReportLogger:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-09-13 23:14:24] [ ERROR] [LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[2024-09-13 23:17:01] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 10616 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:17:01] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:17:02] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 23:17:02] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 23:17:02] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:17:02] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:17:03] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 23:17:03] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:17:03] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 23:17:03] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 23:17:03] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 23:17:03] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1417 ms
+[2024-09-13 23:17:03] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:17:03] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:17:03] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:17:03] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 23:17:03] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:17:03] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:17:03] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:17:04] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:17:04] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:17:05] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:17:05] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:17:05] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:17:05] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:17:05] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:17:05] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 23:17:05] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:17:05] [ WARN ] [AnnotationConfigServletWebServerApplicationContext:633] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[2024-09-13 23:17:05] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:17:05] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 23:17:05] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:17:05] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:17:05] [ INFO ] [ConditionEvaluationReportLogger:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-09-13 23:17:05] [ ERROR] [LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[2024-09-13 23:17:30] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 12480 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:17:30] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:17:30] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 23:17:30] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 23:17:30] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:17:30] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:17:31] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 23:17:31] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:17:31] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 23:17:31] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 23:17:31] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 23:17:31] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1391 ms
+[2024-09-13 23:17:31] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:17:31] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:17:31] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:17:31] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 23:17:31] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:17:31] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:17:31] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:17:32] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:17:33] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:17:33] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:17:33] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:17:33] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:17:33] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:17:33] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:17:34] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 23:17:34] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:17:34] [ WARN ] [AnnotationConfigServletWebServerApplicationContext:633] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[2024-09-13 23:17:34] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:17:34] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 23:17:34] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:17:34] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:17:34] [ INFO ] [ConditionEvaluationReportLogger:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-09-13 23:17:34] [ ERROR] [LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[2024-09-13 23:17:46] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 14008 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:17:46] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:17:46] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 23:17:46] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 23:17:47] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:17:47] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:17:48] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 23:17:48] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:17:48] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 23:17:48] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 23:17:48] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 23:17:48] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1387 ms
+[2024-09-13 23:17:48] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:17:48] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:17:48] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:17:48] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 23:17:48] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:17:48] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:17:48] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:17:48] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:17:49] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:17:49] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:17:50] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:17:50] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:17:50] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:17:50] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:17:50] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 23:17:50] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:17:50] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 23:17:50] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 4.349 seconds (process running for 5.193)
+[2024-09-13 23:17:59] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 23:17:59] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 23:17:59] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-13 23:36:47] [ INFO ] [LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211] Restarting due to 27 class path changes (0 additions, 26 deletions, 1 modification)
+[2024-09-13 23:36:47] [ INFO ] [Http11NioProtocol:173] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:36:47] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:36:47] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 23:36:47] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:36:47] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:36:47] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 14008 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:36:47] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:36:48] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:36:48] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+[2024-09-13 23:36:48] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 23:36:48] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:36:48] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 23:36:48] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 23:36:48] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 23:36:48] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 414 ms
+[2024-09-13 23:36:48] [ INFO ] [HikariDataSource:109] HikariPool-2 - Starting...
+[2024-09-13 23:36:48] [ INFO ] [HikariPool:554] HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:36:48] [ INFO ] [HikariDataSource:122] HikariPool-2 - Start completed.
+[2024-09-13 23:36:48] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 23:36:48] [ ERROR] [StandardManager:175] Exception loading sessions from persistent storage
+java.lang.ClassNotFoundException: com.digitalhouse.ClinicaOdontologica.Entity.Usuario
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:72) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1144) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:529) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:508) ~[?:?]
+	at org.apache.catalina.util.CustomObjectInputStream.resolveClass(CustomObjectInputStream.java:149) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2046) ~[?:?]
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1912) ~[?:?]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2237) ~[?:?]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1747) ~[?:?]
+	at java.base/java.io.ObjectInputStream$FieldValues.<init>(ObjectInputStream.java:2603) ~[?:?]
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2454) ~[?:?]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2269) ~[?:?]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1747) ~[?:?]
+	at java.base/java.io.ObjectInputStream$FieldValues.<init>(ObjectInputStream.java:2603) ~[?:?]
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2454) ~[?:?]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2269) ~[?:?]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1747) ~[?:?]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:525) ~[?:?]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:483) ~[?:?]
+	at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1198) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:831) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:210) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:156) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:345) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4441) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) [tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619) [spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.2.jar:3.3.2]
+	at com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication.main(ClinicaOdontologicaApplication.java:12) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.2.jar:3.3.2]
+[2024-09-13 23:36:48] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:36:48] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:36:48] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:36:48] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:36:48] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:36:48] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:36:48] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:36:48] [ WARN ] [UserDetailsServiceAutoConfiguration:86] 
+
+Using generated security password: 73e66629-9414-4146-8644-eb4a29140698
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-09-13 23:36:48] [ INFO ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:113] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-09-13 23:36:48] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 23:36:48] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:36:48] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 23:36:48] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 0.869 seconds (process running for 1143.254)
+[2024-09-13 23:36:48] [ INFO ] [ConditionEvaluationDeltaLoggingListener:58] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+[2024-09-13 23:36:52] [ INFO ] [LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211] Restarting due to 26 class path changes (26 additions, 0 deletions, 0 modifications)
+[2024-09-13 23:36:52] [ INFO ] [Http11NioProtocol:173] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:36:52] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:36:52] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 23:36:52] [ INFO ] [HikariDataSource:349] HikariPool-2 - Shutdown initiated...
+[2024-09-13 23:36:52] [ INFO ] [HikariDataSource:351] HikariPool-2 - Shutdown completed.
+[2024-09-13 23:36:52] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 14008 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:36:52] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:36:52] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:36:52] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 20 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:36:53] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 23:36:53] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:36:53] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 23:36:53] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 23:36:53] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 23:36:53] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 395 ms
+[2024-09-13 23:36:53] [ INFO ] [HikariDataSource:109] HikariPool-3 - Starting...
+[2024-09-13 23:36:53] [ INFO ] [HikariPool:554] HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:36:53] [ INFO ] [HikariDataSource:122] HikariPool-3 - Start completed.
+[2024-09-13 23:36:53] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 23:36:53] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:36:53] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:36:53] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:36:53] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:36:53] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:36:53] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:36:53] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:36:53] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:36:53] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:36:53] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 23:36:53] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:36:53] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 23:36:53] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 0.778 seconds (process running for 1147.958)
+[2024-09-13 23:36:53] [ INFO ] [ConditionEvaluationDeltaLoggingListener:58] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' usuarioService and found beans of type 'org.springframework.security.authentication.AuthenticationProvider' daoAuthenticationProvider (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+         - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+[2024-09-13 23:36:58] [ INFO ] [AnnotationConfigContextLoaderUtils:83] Could not detect default configuration classes for test class [com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplicationTests]: ClinicaOdontologicaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-09-13 23:36:58] [ INFO ] [SpringBootTestContextBootstrapper:234] Found @SpringBootConfiguration com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication for test class com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplicationTests
+[2024-09-13 23:36:58] [ INFO ] [RestartApplicationListener:74] Restart disabled due to context in which it is running
+[2024-09-13 23:36:59] [ INFO ] [ClinicaOdontologicaApplicationTests:50] Starting ClinicaOdontologicaApplicationTests using Java 22.0.1 with PID 13436 (started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:36:59] [ INFO ] [ClinicaOdontologicaApplicationTests:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:36:59] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:36:59] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:37:00] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:37:00] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:37:00] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:37:00] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:37:00] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:37:00] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:37:00] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:37:01] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:37:01] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:37:02] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:37:02] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:37:02] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:37:02] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:37:02] [ INFO ] [ClinicaOdontologicaApplicationTests:56] Started ClinicaOdontologicaApplicationTests in 4.126 seconds (process running for 5.598)
+[2024-09-13 23:37:03] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:37:03] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:37:03] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:37:23] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 23:37:23] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 23:37:23] [ INFO ] [DispatcherServlet:554] Completed initialization in 2 ms
+[2024-09-13 23:37:55] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:37:55] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 23:37:55] [ INFO ] [HikariDataSource:349] HikariPool-3 - Shutdown initiated...
+[2024-09-13 23:37:55] [ INFO ] [HikariDataSource:351] HikariPool-3 - Shutdown completed.
+[2024-09-13 23:38:14] [ INFO ] [AnnotationConfigContextLoaderUtils:83] Could not detect default configuration classes for test class [com.digitalhouse.ClinicaOdontologica.OdontologosTestIntegracion]: OdontologosTestIntegracion does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-09-13 23:38:14] [ INFO ] [SpringBootTestContextBootstrapper:234] Found @SpringBootConfiguration com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication for test class com.digitalhouse.ClinicaOdontologica.OdontologosTestIntegracion
+[2024-09-13 23:38:14] [ INFO ] [RestartApplicationListener:74] Restart disabled due to context in which it is running
+[2024-09-13 23:38:14] [ INFO ] [OdontologosTestIntegracion:50] Starting OdontologosTestIntegracion using Java 22.0.1 with PID 11776 (started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:38:14] [ INFO ] [OdontologosTestIntegracion:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:38:15] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:38:15] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:38:16] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:38:16] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:38:16] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:38:16] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:38:16] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:38:16] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:38:16] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:38:17] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:38:17] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:38:17] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:38:17] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:38:17] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:38:18] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:38:18] [ INFO ] [SpringBootMockServletContext:437] Initializing Spring TestDispatcherServlet ''
+[2024-09-13 23:38:18] [ INFO ] [TestDispatcherServlet:532] Initializing Servlet ''
+[2024-09-13 23:38:18] [ INFO ] [TestDispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-13 23:38:18] [ INFO ] [OdontologosTestIntegracion:56] Started OdontologosTestIntegracion in 4.061 seconds (process running for 5.474)
+[2024-09-13 23:38:19] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:38:19] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:38:19] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:38:31] [ INFO ] [AnnotationConfigContextLoaderUtils:83] Could not detect default configuration classes for test class [com.digitalhouse.ClinicaOdontologica.PacientesTestIntegracion]: PacientesTestIntegracion does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-09-13 23:38:31] [ INFO ] [SpringBootTestContextBootstrapper:234] Found @SpringBootConfiguration com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication for test class com.digitalhouse.ClinicaOdontologica.PacientesTestIntegracion
+[2024-09-13 23:38:31] [ INFO ] [RestartApplicationListener:74] Restart disabled due to context in which it is running
+[2024-09-13 23:38:31] [ INFO ] [PacientesTestIntegracion:50] Starting PacientesTestIntegracion using Java 22.0.1 with PID 15980 (started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:38:31] [ INFO ] [PacientesTestIntegracion:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:38:32] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:38:32] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:38:33] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:38:33] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:38:33] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:38:33] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:38:33] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:38:33] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:38:33] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:38:34] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:38:34] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:38:35] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:38:35] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:38:35] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:38:35] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:38:35] [ INFO ] [SpringBootMockServletContext:437] Initializing Spring TestDispatcherServlet ''
+[2024-09-13 23:38:35] [ INFO ] [TestDispatcherServlet:532] Initializing Servlet ''
+[2024-09-13 23:38:35] [ INFO ] [TestDispatcherServlet:554] Completed initialization in 2 ms
+[2024-09-13 23:38:35] [ INFO ] [PacientesTestIntegracion:56] Started PacientesTestIntegracion in 4.201 seconds (process running for 5.568)
+[2024-09-13 23:38:36] [ WARN ] [SqlExceptionHelper:145] SQL Error: 23505, SQLState: 23505
+[2024-09-13 23:38:36] [ ERROR] [SqlExceptionHelper:150] Violación de indice de Unicidad ó Clave primaria: "PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'yerson@gmail.com' )"
+Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'yerson@gmail.com' )"; SQL statement:
+insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default) [23505-224]
+[2024-09-13 23:38:36] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:38:36] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:38:36] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:38:53] [ INFO ] [AnnotationConfigContextLoaderUtils:83] Could not detect default configuration classes for test class [com.digitalhouse.ClinicaOdontologica.TurnosTestIntegracion]: TurnosTestIntegracion does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-09-13 23:38:53] [ INFO ] [SpringBootTestContextBootstrapper:234] Found @SpringBootConfiguration com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication for test class com.digitalhouse.ClinicaOdontologica.TurnosTestIntegracion
+[2024-09-13 23:38:54] [ INFO ] [RestartApplicationListener:74] Restart disabled due to context in which it is running
+[2024-09-13 23:38:54] [ INFO ] [TurnosTestIntegracion:50] Starting TurnosTestIntegracion using Java 22.0.1 with PID 14540 (started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:38:54] [ INFO ] [TurnosTestIntegracion:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:38:54] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:38:55] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:38:55] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:38:55] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:38:55] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:38:55] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:38:56] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:38:56] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:38:56] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:38:56] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:38:57] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:38:57] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:38:57] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:38:57] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:38:57] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:38:58] [ INFO ] [SpringBootMockServletContext:437] Initializing Spring TestDispatcherServlet ''
+[2024-09-13 23:38:58] [ INFO ] [TestDispatcherServlet:532] Initializing Servlet ''
+[2024-09-13 23:38:58] [ INFO ] [TestDispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-13 23:38:58] [ INFO ] [TurnosTestIntegracion:56] Started TurnosTestIntegracion in 4.081 seconds (process running for 5.449)
+[2024-09-13 23:38:59] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:38:59] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:38:59] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:41:03] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 16196 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:41:03] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:41:03] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 23:41:03] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 23:41:03] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:41:03] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:41:04] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 23:41:04] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:41:04] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 23:41:04] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 23:41:04] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 23:41:04] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1574 ms
+[2024-09-13 23:41:04] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:41:04] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:41:04] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:41:04] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 23:41:05] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:41:05] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:41:05] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:41:05] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:41:06] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:41:06] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:41:06] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:41:06] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:41:06] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:41:06] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:41:07] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 23:41:07] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:41:07] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 23:41:07] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 4.876 seconds (process running for 5.876)
+[2024-09-13 23:41:18] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 23:41:18] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 23:41:18] [ INFO ] [DispatcherServlet:554] Completed initialization in 2 ms
+[2024-09-13 23:41:40] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:41:40] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 23:41:40] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:41:40] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:42:01] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 3416 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:42:01] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:42:01] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 23:42:01] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 23:42:01] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:42:01] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:42:02] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 23:42:02] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:42:02] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 23:42:02] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 23:42:02] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 23:42:02] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1424 ms
+[2024-09-13 23:42:02] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:42:02] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:42:02] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:42:02] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 23:42:03] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:42:03] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:42:03] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:42:03] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:42:04] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:42:04] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:42:04] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:42:04] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:42:04] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:42:04] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:42:05] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 23:42:05] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:42:05] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 23:42:05] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 4.549 seconds (process running for 5.404)
+[2024-09-13 23:42:09] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 23:42:09] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 23:42:09] [ INFO ] [DispatcherServlet:554] Completed initialization in 2 ms
+[2024-09-13 23:42:51] [ INFO ] [AnnotationConfigContextLoaderUtils:83] Could not detect default configuration classes for test class [com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplicationTests]: ClinicaOdontologicaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-09-13 23:42:51] [ INFO ] [SpringBootTestContextBootstrapper:234] Found @SpringBootConfiguration com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication for test class com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplicationTests
+[2024-09-13 23:42:51] [ INFO ] [RestartApplicationListener:74] Restart disabled due to context in which it is running
+[2024-09-13 23:42:52] [ INFO ] [ClinicaOdontologicaApplicationTests:50] Starting ClinicaOdontologicaApplicationTests using Java 22.0.1 with PID 12580 (started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:42:52] [ INFO ] [ClinicaOdontologicaApplicationTests:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:42:52] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:42:52] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 62 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:42:53] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:42:53] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:42:53] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:42:53] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:42:53] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:42:53] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:42:53] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:42:54] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:42:54] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:42:55] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:42:55] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:42:55] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:42:55] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:42:55] [ INFO ] [ClinicaOdontologicaApplicationTests:56] Started ClinicaOdontologicaApplicationTests in 4.062 seconds (process running for 5.406)
+[2024-09-13 23:42:56] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:42:56] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:42:56] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:43:10] [ INFO ] [AnnotationConfigContextLoaderUtils:83] Could not detect default configuration classes for test class [com.digitalhouse.ClinicaOdontologica.OdontologosTestIntegracion]: OdontologosTestIntegracion does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-09-13 23:43:10] [ INFO ] [SpringBootTestContextBootstrapper:234] Found @SpringBootConfiguration com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication for test class com.digitalhouse.ClinicaOdontologica.OdontologosTestIntegracion
+[2024-09-13 23:43:10] [ INFO ] [RestartApplicationListener:74] Restart disabled due to context in which it is running
+[2024-09-13 23:43:10] [ INFO ] [OdontologosTestIntegracion:50] Starting OdontologosTestIntegracion using Java 22.0.1 with PID 12004 (started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:43:10] [ INFO ] [OdontologosTestIntegracion:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:43:11] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:43:11] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:43:12] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:43:12] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:43:12] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:43:12] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:43:12] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:43:12] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:43:12] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:43:13] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:43:13] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:43:13] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:43:14] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:43:14] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:43:14] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:43:14] [ INFO ] [SpringBootMockServletContext:437] Initializing Spring TestDispatcherServlet ''
+[2024-09-13 23:43:14] [ INFO ] [TestDispatcherServlet:532] Initializing Servlet ''
+[2024-09-13 23:43:14] [ INFO ] [TestDispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-13 23:43:14] [ INFO ] [OdontologosTestIntegracion:56] Started OdontologosTestIntegracion in 4.14 seconds (process running for 5.476)
+[2024-09-13 23:43:15] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:43:15] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:43:15] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:43:24] [ INFO ] [AnnotationConfigContextLoaderUtils:83] Could not detect default configuration classes for test class [com.digitalhouse.ClinicaOdontologica.PacientesTestIntegracion]: PacientesTestIntegracion does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-09-13 23:43:24] [ INFO ] [SpringBootTestContextBootstrapper:234] Found @SpringBootConfiguration com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication for test class com.digitalhouse.ClinicaOdontologica.PacientesTestIntegracion
+[2024-09-13 23:43:24] [ INFO ] [RestartApplicationListener:74] Restart disabled due to context in which it is running
+[2024-09-13 23:43:25] [ INFO ] [PacientesTestIntegracion:50] Starting PacientesTestIntegracion using Java 22.0.1 with PID 14424 (started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:43:25] [ INFO ] [PacientesTestIntegracion:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:43:25] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:43:26] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:43:26] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:43:26] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:43:26] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:43:26] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:43:26] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:43:27] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:43:27] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:43:27] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:43:27] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:43:28] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:43:28] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:43:28] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:43:28] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:43:29] [ INFO ] [SpringBootMockServletContext:437] Initializing Spring TestDispatcherServlet ''
+[2024-09-13 23:43:29] [ INFO ] [TestDispatcherServlet:532] Initializing Servlet ''
+[2024-09-13 23:43:29] [ INFO ] [TestDispatcherServlet:554] Completed initialization in 2 ms
+[2024-09-13 23:43:29] [ INFO ] [PacientesTestIntegracion:56] Started PacientesTestIntegracion in 4.073 seconds (process running for 5.459)
+[2024-09-13 23:43:29] [ WARN ] [SqlExceptionHelper:145] SQL Error: 23505, SQLState: 23505
+[2024-09-13 23:43:29] [ ERROR] [SqlExceptionHelper:150] Violación de indice de Unicidad ó Clave primaria: "PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'yerson@gmail.com' )"
+Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'yerson@gmail.com' )"; SQL statement:
+insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default) [23505-224]
+[2024-09-13 23:43:29] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:43:29] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:43:29] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:43:39] [ INFO ] [AnnotationConfigContextLoaderUtils:83] Could not detect default configuration classes for test class [com.digitalhouse.ClinicaOdontologica.TurnosTestIntegracion]: TurnosTestIntegracion does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-09-13 23:43:39] [ INFO ] [SpringBootTestContextBootstrapper:234] Found @SpringBootConfiguration com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication for test class com.digitalhouse.ClinicaOdontologica.TurnosTestIntegracion
+[2024-09-13 23:43:39] [ INFO ] [RestartApplicationListener:74] Restart disabled due to context in which it is running
+[2024-09-13 23:43:40] [ INFO ] [TurnosTestIntegracion:50] Starting TurnosTestIntegracion using Java 22.0.1 with PID 8044 (started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:43:40] [ INFO ] [TurnosTestIntegracion:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:43:40] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:43:40] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:43:41] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:43:41] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:43:41] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:43:41] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:43:41] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:43:41] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:43:41] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:43:42] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:43:42] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:43:43] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:43:43] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:43:43] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:43:43] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:43:43] [ INFO ] [SpringBootMockServletContext:437] Initializing Spring TestDispatcherServlet ''
+[2024-09-13 23:43:43] [ INFO ] [TestDispatcherServlet:532] Initializing Servlet ''
+[2024-09-13 23:43:43] [ INFO ] [TestDispatcherServlet:554] Completed initialization in 2 ms
+[2024-09-13 23:43:43] [ INFO ] [TurnosTestIntegracion:56] Started TurnosTestIntegracion in 4.051 seconds (process running for 5.385)
+[2024-09-13 23:43:44] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:43:44] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:43:44] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:45:52] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:45:52] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 23:45:52] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:45:52] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-13 23:46:00] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.1 with PID 8064 (C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica\target\classes started by vladi in C:\Users\vladi\Documents\estudio\DIGITAL HOUSE\BACKEND\proyectoFinal\ClinicaOdontologica)
+[2024-09-13 23:46:00] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-13 23:46:00] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-13 23:46:00] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-13 23:46:01] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-13 23:46:01] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
+[2024-09-13 23:46:02] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-13 23:46:02] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:46:02] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-13 23:46:02] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-13 23:46:02] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-13 23:46:02] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1439 ms
+[2024-09-13 23:46:02] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-13 23:46:02] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-13 23:46:02] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-13 23:46:02] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-13 23:46:02] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-13 23:46:02] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-13 23:46:02] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-13 23:46:03] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-13 23:46:03] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-13 23:46:03] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:46:04] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-13 23:46:04] [ INFO ] [InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83] Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+[2024-09-13 23:46:04] [ WARN ] [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[2024-09-13 23:46:04] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-13 23:46:04] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-13 23:46:04] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-13 23:46:04] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-13 23:46:04] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 4.671 seconds (process running for 5.564)
+[2024-09-13 23:46:12] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-13 23:46:12] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-13 23:46:12] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-13 23:47:49] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-13 23:47:49] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-13 23:47:49] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-13 23:47:49] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.

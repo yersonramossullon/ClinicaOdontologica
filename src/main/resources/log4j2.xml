@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Appender para la consola -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [ %-5p] [%c{1}:%L] %m%n" />
+        </Console>
+
+        <!-- Appender para el archivo -->
+        <File name="FileAppender" fileName="logs/clinicaOdontologica.log">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [ %-5p] [%c{1}:%L] %m%n" />
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!-- Logger raíz que aplica a toda la aplicación -->
+        <Root level="info">
+            <!-- Referencia al appender de la consola -->
+            <AppenderRef ref="ConsoleAppender" />
+            <!-- Referencia al appender del archivo -->
+            <AppenderRef ref="FileAppender" />
+        </Root>
+    </Loggers>
+</Configuration>

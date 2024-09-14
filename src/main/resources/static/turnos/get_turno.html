@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista Turnos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/turnos/get_turno.js"></script>
+  </head>
+  <body class="bg-gray-200">
+    <nav class="bg-gray-950 p-4 fixed top-0 left-0 w-full shadow-lg z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="../index.html" class="text-white text-lg font-semibold">
+          Clinica Odontologica
+        </a>
+        <ul class="flex space-x-8">
+          <!-- Opción 1 -->
+          <li class="group relative">
+            <a href="#" class="text-white hover:text-gray-300 font-semibold">
+              Odontologos
+            </a>
+            <ul
+              class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <li>
+                <a
+                  href="../turnos/post_turno.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Guardar
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../odontologos/get_odontologos.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Listar Odontologos
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Opción 2 -->
+          <li class="group relative">
+            <a href="#" class="text-white hover:text-gray-300 font-semibold">
+              Pacientes
+            </a>
+            <ul
+              class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <li>
+                <a
+                  href="../pacientes/post_paciente.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Guardar
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../pacientes/get_pacientes.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Listar Pacientes
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Opción 3 -->
+          <li class="group relative">
+            <a href="#" class="text-white hover:text-gray-300 font-semibold">
+              Turnos
+            </a>
+            <ul
+              class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <li>
+                <a
+                  href="../turnos/post_turno.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Guardar
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <header class="flex justify-center mt-20">
+        <h1 class="text-3xl font-bold p-4 text-green-700">Lista de Turnos</h1>
+      </header>
+      <div class="overflow-x-auto">
+        <table
+          id="tablaTurnos"
+          class="w-5/6 bg-white border border-gray-300 flex-wrap mx-auto"
+        >
+          <thead class="bg-green-600 content-center text-white">
+            <tr>
+              <th class="py-2 px-4 border-b">ID</th>
+              <th class="py-2 px-4 border-b">Paciente</th>
+              <th class="py-2 px-4 border-b">Odontólogo</th>
+              <th class="py-2 px-4 border-b">Fecha</th>
+              <th class="py-2 px-4 border-b">Editar</th>
+              <th class="py-2 px-4 border-b">Eliminar</th>
+            </tr>
+          </thead>
+          <tbody id="tBodyTurnos"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Sección para actualizar turnos -->
+    <section id="seccion_form" class="my-8 hidden">
+      <header class="flex justify-center">
+        <h2 class="text-2xl font-semibold">Actualizar Turno</h2>
+      </header>
+      <div class="container mx-auto mt-1">
+        <form
+          id="actualizar_turno"
+          class="bg-white p-8 rounded-lg shadow-lg max-w-lg mx-auto"
+        >
+          <!-- Información del Turno -->
+          <fieldset class="mb-6">
+            <legend class="text-xl font-semibold mb-4 text-gray-700">
+              Información del Turno
+            </legend>
+
+            <label for="text-id" class="block mb-2 text-gray-700">ID</label>
+            <input
+              type="text"
+              id="text-id"
+              name="text-id"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none bg-gray-200 text-gray-800"
+              readonly
+            />
+
+            <label for="paciente" class="block mb-2 text-gray-700"
+              >Paciente</label
+            >
+            <input
+              type="text"
+              id="paciente"
+              name="paciente"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Nombre del Paciente"
+              readonly
+            />
+
+            <label for="odontologo" class="block mt-4 mb-2 text-gray-700"
+              >Odontólogo</label
+            >
+            <input
+              type="text"
+              id="odontologo"
+              name="odontologo"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Nombre del Odontólogo"
+              readonly
+            />
+
+            <label for="fecha" class="block mt-4 mb-2 text-gray-700"
+              >Fecha</label
+            >
+            <input
+              type="date"
+              id="fecha"
+              name="fecha"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </fieldset>
+
+          <div class="flex justify-center gap-16">
+            <button
+              id="btn_actualizar"
+              type="submit"
+              class="w-full bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"
+            >
+              Actualizar
+            </button>
+            <button
+              id="btn_cancelar"
+              type="button"
+              class="w-full bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
+            >
+              Cancelar
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

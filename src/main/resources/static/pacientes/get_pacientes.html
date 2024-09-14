@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista Pacientes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/pacientes/get-pacientes2.js"></script>
+  </head>
+  <body class="bg-gray-200">
+    <!-- inicio menu navegacion -->
+    <nav class="bg-gray-950 p-4 fixed top-0 left-0 w-full shadow-lg z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="../index.html" class="text-white text-lg font-semibold">
+          Clinica Odontologica
+        </a>
+        <ul class="flex space-x-8">
+          <!-- Opción 1 -->
+          <li class="group relative">
+            <a href="#" class="text-white hover:text-gray-300 font-semibold">
+              Odontologos
+            </a>
+            <ul
+              class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <li>
+                <a
+                  href="../odontologos/post_odontologos.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Guardar
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../odontologos/get_odontologos.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Listar Odontologos
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Opción 2 -->
+          <li class="group relative">
+            <a href="#" class="text-white hover:text-gray-300 font-semibold">
+              Pacientes
+            </a>
+            <ul
+              class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <li>
+                <a
+                  href="../pacientes/post_paciente.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Guardar
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Opción 3 -->
+          <li class="group relative">
+            <a href="#" class="text-white hover:text-gray-300 font-semibold">
+              Turnos
+            </a>
+            <ul
+              class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <li>
+                <a
+                  href="../turnos/post_turno.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Guardar
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../turnos/get_turno.html"
+                  class="block px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >
+                  Listar Turnos
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin menu navegacion -->
+    <section>
+      <header class="flex justify-center mt-20">
+        <h1 class="text-3xl font-bold p-4 text-blue-700">Lista de Pacientes</h1>
+      </header>
+      <div class="overflow-x-auto">
+        <table
+          id="tablaPacientes"
+          class="w-5/6 bg-white border border-gray-300 flex-wrap mx-auto"
+        >
+          <thead class="bg-blue-950 content-center text-white">
+            <tr>
+              <th class="py-2 px-4 border-b">ID</th>
+              <th class="py-2 px-4 border-b">Nombre</th>
+              <th class="py-2 px-4 border-b">Apellido</th>
+              <th class="py-2 px-4 border-b">Cédula</th>
+              <th class="py-2 px-4 border-b">Email</th>
+              <th class="py-2 px-4 border-b">Fecha Ingreso</th>
+              <th class="py-2 px-4 border-b">Calle</th>
+              <th class="py-2 px-4 border-b">Número</th>
+              <th class="py-2 px-4 border-b">Localidad</th>
+              <th class="py-2 px-4 border-b">Provincia</th>
+              <th class="py-2 px-4 border-b">Editar</th>
+              <th class="py-2 px-4 border-b">Eliminar</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <!-- Seccion para actualizar Datos de paciente -->
+    <section id="seccion_form" class="my-8 hidden">
+      <header class="flex justify-center">
+        <h2 class="text-2xl font-semibold">Actualizar Paciente</h2>
+      </header>
+      <div class="container mx-auto mt-1">
+        <form
+          id="actualizar_paciente"
+          class="bg-white p-8 rounded-lg shadow-lg max-w-lg mx-auto"
+        >
+          <!-- Información Personal -->
+          <fieldset class="mb-6">
+            <legend class="text-xl font-semibold mb-4 text-gray-700">
+              Información Personal
+            </legend>
+
+            <label for="text-id" class="block mb-2 text-gray-700">ID</label>
+            <input
+              type="text"
+              id="text-id"
+              name="text-id"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none bg-gray-200 text-gray-800"
+              readonly
+            />
+
+            <label for="nombre" class="block mb-2 text-gray-700">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Nombre"
+            />
+
+            <label for="apellido" class="block mt-4 mb-2 text-gray-700"
+              >Apellido</label
+            >
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Apellido"
+            />
+
+            <label for="cedula" class="block mt-4 mb-2 text-gray-700"
+              >Cédula</label
+            >
+            <input
+              type="text"
+              id="cedula"
+              name="cedula"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Cédula"
+            />
+
+            <label for="email" class="block mt-4 mb-2 text-gray-700"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Email"
+            />
+
+            <label for="fecha-ingreso" class="block mt-4 mb-2 text-gray-700"
+              >Fecha de Ingreso</label
+            >
+            <input
+              type="date"
+              id="fecha-ingreso"
+              name="fecha-ingreso"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </fieldset>
+
+          <!-- Domicilio -->
+          <fieldset class="mb-2">
+            <legend class="text-xl font-semibold mb-4 text-gray-700">
+              Domicilio
+            </legend>
+
+            <label for="calle" class="block mb-2 text-gray-700">Calle</label>
+            <input
+              type="text"
+              id="calle"
+              name="calle"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Calle"
+            />
+
+            <label for="numero" class="block mt-4 mb-2 text-gray-700"
+              >Número</label
+            >
+            <input
+              type="text"
+              id="numero"
+              name="numero"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Número"
+            />
+
+            <label for="localidad" class="block mt-4 mb-2 text-gray-700"
+              >Localidad</label
+            >
+            <input
+              type="text"
+              id="localidad"
+              name="localidad"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Localidad"
+            />
+
+            <label for="provincia" class="block mt-4 mb-2 text-gray-700"
+              >Provincia</label
+            >
+            <input
+              type="text"
+              id="provincia"
+              name="provincia"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Provincia"
+            />
+          </fieldset>
+          <!-- alerta formulario-->
+          <fieldset class="mb-6">
+            <div
+              id="alerta"
+              class="hidden my-auto py-8 rounded-lg gap-4"
+              role="alert"
+            ></div>
+          </fieldset>
+          <!-- Botón de Enviar y cancelar -->
+          <div class="flex justify-center gap-16">
+            <button
+              id="btn_actualizar"
+              type="submit"
+              class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            >
+              Actualizar
+            </button>
+            <button
+              id="btn_cancelar"
+              type="button"
+              class="w-full bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
+            >
+              Cancelar
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
